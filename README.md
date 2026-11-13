@@ -416,7 +416,7 @@ AI-Process-Automation/
 **1. Get the code**
 
 ```bash
-git clone <repository-url> AI-Process-Automation
+git clone https://github.com/solankigaurav976-stack/AI-Process-Automation.git
 cd AI-Process-Automation
 ```
 
@@ -493,8 +493,8 @@ cd dashboard
 
 **Gaurav Solanki**
 
-<!-- TODO (owner): add the profile links you want to show (LinkedIn / GitHub / portfolio). -->
-*Profile links to be added.*
+- **GitHub:** [solankigaurav976-stack](https://github.com/solankigaurav976-stack)
+- **Portfolio:** [View my portfolio](https://solankigaurav976-stack.github.io/gaurav-portfolio/)
 
 ### Licence
 
