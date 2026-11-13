@@ -80,6 +80,68 @@ def goto(at, page):
     return at
 
 
+EXPECTED_ATTRIBUTION = ("**Dataset:** BPI Challenge 2017", "**Creator:** Boudewijn van Dongen",
+                        "**Year:** 2017", "**Publisher:** 4TU.ResearchData")
+# Official URLs, written out literally so the test checks the real addresses, not the constants.
+DOI_URL = "https://doi.org/10.4121/uuid:5f3067df-f10b-45da-b98b-86ae4c7a310b"
+TERMS_URL = "https://doi.org/10.4121/resource:terms_of_use"
+EXPECTED_DOI_LINK = f"**DOI:** [10.4121/uuid:5f3067df-f10b-45da-b98b-86ae4c7a310b]({DOI_URL})"
+EXPECTED_TERMS_LINK = f"**Terms:** [4TU General Terms of Use]({TERMS_URL})"
+
+
+def assert_dataset_attribution(at):
+    """The sidebar acknowledges the dataset source (4TU terms, Art. 1 and 4a).
+
+    Four fields, then a clickable DOI link and a clickable link to the official terms.
+    """
+    boxes = [m.value for m in at.sidebar.markdown if m.value.startswith("**Data source**")]
+    assert len(boxes) == 1, boxes
+    lines = boxes[0].split("  \n")
+    assert tuple(lines[1:5]) == EXPECTED_ATTRIBUTION, lines
+    assert tuple(f"**{k}:** {v}" for k, v in definitions.DATASET_ATTRIBUTION) == EXPECTED_ATTRIBUTION
+    assert lines[5] == EXPECTED_DOI_LINK, lines  # DOI is a Markdown link to the DOI resolver
+    assert lines[6] == EXPECTED_TERMS_LINK, lines  # terms link to the official 4TU record
+    assert len(lines) == 7, lines
+
+
+ZIP_LABEL = "CSV + Attribution (ZIP)"
+
+
+def assert_download_notices(at, page):
+    """Every CSV download button is followed by its ZIP (CSV + attribution) button and then the
+    dataset notice with the terms link; there is exactly one ZIP button and one notice per CSV button."""
+    notices = [c.value for c in at.caption if c.value.startswith("Derived from BPI Challenge 2017")]
+    buttons = at.get("download_button")
+    csv_buttons = [b for b in buttons if b.proto.label != ZIP_LABEL]
+    zip_buttons = [b for b in buttons if b.proto.label == ZIP_LABEL]
+    assert len(notices) == len(csv_buttons) == len(zip_buttons), page
+
+    def leaves(node):  # rendered elements in display order
+        for child in getattr(node, "children", {}).values():
+            if getattr(child, "children", None):
+                yield from leaves(child)
+            else:
+                yield child
+
+    ordered = list(leaves(at.main))
+    for i, element in enumerate(ordered):
+        if element.type == "download_button" and element.proto.label != ZIP_LABEL:
+            zip_button, notice = (ordered[i + 1: i + 3] + [None, None])[:2]
+            assert zip_button is not None and zip_button.type == "download_button", (page, element.proto.label)
+            assert zip_button.proto.label == ZIP_LABEL, (page, zip_button.proto.label)
+            assert zip_button.proto.disabled == element.proto.disabled, page  # both offered (or not) together
+            assert notice is not None and str(getattr(notice, "value", "")).startswith(
+                "Derived from BPI Challenge 2017"), (page, getattr(notice, "type", None))
+        elif element.type == "download_button":  # a ZIP button always directly follows its CSV button
+            previous = ordered[i - 1]
+            assert previous.type == "download_button" and previous.proto.label != ZIP_LABEL, page
+    for notice in notices:
+        assert "Boudewijn van Dongen, 2017, 4TU.ResearchData" in notice
+        assert "Keep this acknowledgement with any downloaded or shared data" in notice
+        assert f"[4TU General Terms of Use]({TERMS_URL})" in notice
+        assert "non-commercial use only" in notice
+
+
 # --------------------------------------------------------------------------- #
 # Pages
 # --------------------------------------------------------------------------- #
@@ -88,6 +150,7 @@ def test_every_page_renders(app, page, title):
     goto(app, page)
     assert [t.value for t in app.title] == [title]
     assert "BPI Challenge 2017" in " ".join(c.value for c in app.sidebar.caption)
+    assert_dataset_attribution(app)
 
 
 def test_sidebar_shows_dataset_period_and_utc(app):
@@ -164,11 +227,85 @@ def test_explorer_lists_applications_and_searches(app):
     app.text_input(key="explorer_query").set_value("").run()
 
 
-def test_downloads_are_offered_on_data_pages(app):
-    for page, minimum in (("views/executive.py", 1), ("views/cancellation.py", 1),
-                          ("views/explorer.py", 1), ("views/data_quality.py", 2)):
-        goto(app, page)
-        assert len(app.get("download_button")) >= minimum, page
+class _RecordingStreamlit:
+    """Stands in for ``streamlit`` inside ui.components: records the data handed to each
+    ``st.download_button`` (built twice, to check determinism) and forwards everything."""
+
+    def __init__(self, real, served):
+        self._real, self._served = real, served
+
+    def __getattr__(self, name):
+        return getattr(self._real, name)
+
+    def download_button(self, label, *, data, file_name, mime, key, **kwargs):
+        build = data if callable(data) else (lambda: data)
+        self._served[key] = (label, file_name, mime, build(), build())
+        return self._real.download_button(label, data=data, file_name=file_name, mime=mime, key=key, **kwargs)
+
+
+#: The ten CSV downloads (widget keys) and their ZIP counterparts.
+CSV_DOWNLOAD_KEYS = {"dl_exec_status", "dl_exec_monthly", "dl_proc_milestones", "dl_proc_occurrences",
+                     "dl_proc_freq", "dl_cancel_cases", "dl_explorer", "dl_explorer_events",
+                     "dl_dq_checks", "dl_dq_info"}
+# Written out literally so the checks test the real values rather than the constants.
+DOI = "10.4121/uuid:5f3067df-f10b-45da-b98b-86ae4c7a310b"
+CITATION = f"van Dongen, Boudewijn (2017): BPI Challenge 2017. 4TU.ResearchData. Dataset. https://doi.org/{DOI}"
+
+
+def assert_zip_download(served, csv_key):
+    """The ZIP beside a CSV button holds exactly that CSV (byte for byte) and ATTRIBUTION.txt."""
+    import io
+    import zipfile
+
+    csv_label, csv_name, csv_mime, csv_bytes, csv_rebuilt = served[csv_key]
+    zip_label, zip_name, zip_mime, zip_bytes, zip_rebuilt = served["zip_" + csv_key.removeprefix("dl_")]
+    assert csv_mime == "text/csv" and csv_name.endswith(".csv") and csv_label != ZIP_LABEL  # plain CSV unchanged
+    assert csv_bytes == csv_rebuilt and csv_bytes, csv_key
+    assert zip_label == ZIP_LABEL and zip_mime == "application/zip", csv_key
+    assert zip_name == csv_name.removesuffix(".csv") + "_with_attribution.zip"
+    assert zip_bytes == zip_rebuilt, f"{csv_key}: ZIP generation must be deterministic"
+    with zipfile.ZipFile(io.BytesIO(zip_bytes)) as archive:
+        assert archive.testzip() is None
+        assert archive.namelist() == [csv_name, "ATTRIBUTION.txt"], csv_key  # exactly two files
+        assert archive.read(csv_name) == csv_bytes, csv_key  # byte-for-byte the plain CSV download
+        for info in archive.infolist():  # fixed metadata
+            assert info.date_time == (1980, 1, 1, 0, 0, 0) and info.external_attr >> 16 == 0o644, info
+        text = archive.read("ATTRIBUTION.txt").decode("utf-8")
+    flat = " ".join(text.split())
+    assert f"{csv_name} is derived from the BPI Challenge 2017 dataset." in flat
+    assert CITATION in flat
+    for field in (r"Dataset:\s+BPI Challenge 2017", r"Creator:\s+Boudewijn van Dongen", r"Year:\s+2017",
+                  r"Publisher:\s+4TU\.ResearchData", rf"DOI:\s+{re.escape(DOI)}"):
+        assert re.search(field, text), field
+    assert f"https://doi.org/{DOI}" in text and TERMS_URL in text and "4TU General Terms of Use" in text
+    assert "Non-commercial use only." in flat
+    assert ("Keep this acknowledgement (this file, or the citation above) with the data whenever you share "
+            "or redistribute it, and require anyone you share it with to keep it as well.") in flat
+
+
+def test_downloads_are_offered_on_data_pages(app, monkeypatch):
+    from ui import components, selection
+
+    served: dict = {}
+    monkeypatch.setattr(components, "st", _RecordingStreamlit(components.st, served))
+    # Selections that make the two selection-dependent downloads appear (transition occurrences, events).
+    transition, application = selection.SELECTION_KEYS["transition"], selection.SELECTION_KEYS["application"]
+    app.session_state[transition] = ("A_Create Application", "A_Submitted")
+    app.session_state[application] = "Application_1000334415"
+    try:
+        for page, minimum in (("views/executive.py", 1), ("views/process.py", 1), ("views/cancellation.py", 1),
+                              ("views/explorer.py", 1), ("views/data_quality.py", 2)):
+            goto(app, page)
+            assert len(app.get("download_button")) >= minimum, page
+            assert_download_notices(app, page)
+    finally:
+        app.session_state[transition] = None  # the app's own "no selection" value (selection.clear_selection)
+        app.session_state[application] = None
+
+    # All ten downloads were offered, each with its ZIP counterpart, and nothing else.
+    assert set(served) == CSV_DOWNLOAD_KEYS | {"zip_" + k.removeprefix("dl_") for k in CSV_DOWNLOAD_KEYS}
+    for key in sorted(CSV_DOWNLOAD_KEYS):
+        assert_zip_download(served, key)
 
 
 # --------------------------------------------------------------------------- #
@@ -285,6 +422,7 @@ def test_missing_event_log_shows_error_panel(tmp_path, monkeypatch):
         errors = " ".join(e.value for e in at.error)
         assert "could not load its data" in errors and "not found" in errors
         assert not at.metric  # no page content rendered with missing data
+        assert_dataset_attribution(at)  # the source is still acknowledged
     finally:
         monkeypatch.undo()
         data.clear_caches()

@@ -21,6 +21,28 @@ DATASET_END_DISPLAY = "1 February 2017"
 
 SOURCE_EVENT_LOG = "Event log: data/processed/loan_application_events.parquet (recalculated)"
 
+#: Dataset attribution shown in the sidebar on every page (4TU General Terms of Use,
+#: Art. 1 and 4a: acknowledge the source and its rights-holder). Order is display order.
+DATASET_ATTRIBUTION: tuple[tuple[str, str], ...] = (
+    ("Dataset", "BPI Challenge 2017"),
+    ("Creator", "Boudewijn van Dongen"),
+    ("Year", "2017"),
+    ("Publisher", "4TU.ResearchData"),
+)
+#: Persistent identifier of the dataset (official 4TU.ResearchData record).
+DATASET_DOI = "10.4121/uuid:5f3067df-f10b-45da-b98b-86ae4c7a310b"
+DATASET_DOI_URL = f"https://doi.org/{DATASET_DOI}"
+#: Licence named on the dataset's official 4TU.ResearchData record (licence URL as given there).
+DATASET_TERMS_NAME = "4TU General Terms of Use"
+DATASET_TERMS_URL = "https://doi.org/10.4121/resource:terms_of_use"
+
+#: Shown next to every CSV download button: downloads are derived from the dataset.
+DOWNLOAD_NOTICE = (
+    "Derived from BPI Challenge 2017 (Boudewijn van Dongen, 2017, 4TU.ResearchData). "
+    "Keep this acknowledgement with any downloaded or shared data. Use is subject to the "
+    f"[{DATASET_TERMS_NAME}]({DATASET_TERMS_URL}): non-commercial use only."
+)
+
 
 def report_source(filename: str) -> str:
     return f"Existing report: reports/{filename}"

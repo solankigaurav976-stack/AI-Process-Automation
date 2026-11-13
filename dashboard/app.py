@@ -48,6 +48,7 @@ def main() -> None:
 
     st.sidebar.markdown("### Loan Process Intelligence")
     st.sidebar.caption("BPI Challenge 2017 loan application event log")
+    components.dataset_attribution()  # before loading data, so it is shown even if loading fails
 
     try:
         options = data.options()

@@ -7,6 +7,8 @@ Components never compute metrics.
 
 from __future__ import annotations
 
+import io
+import zipfile
 from collections.abc import Sequence
 from dataclasses import dataclass
 
@@ -150,11 +152,87 @@ def csv_payload(df: pd.DataFrame):
     return lambda: to_csv_bytes(frozen)
 
 
-def download_csv(df: pd.DataFrame, file_name: str, *, label: str = "Download CSV", key: str) -> None:
-    st.download_button(
-        label, data=csv_payload(df), file_name=file_name, mime="text/csv", key=key,
-        icon=":material/download:", on_click="ignore", disabled=df.empty,
+ZIP_LABEL = "CSV + Attribution (ZIP)"
+ATTRIBUTION_FILE_NAME = "ATTRIBUTION.txt"
+#: Fixed metadata so the same data always produces byte-identical ZIP files (1980-01-01 is the ZIP epoch).
+_ZIP_TIMESTAMP = (1980, 1, 1, 0, 0, 0)
+_ZIP_FILE_MODE = 0o644
+_DATASET_CITATION = (
+    "van Dongen, Boudewijn (2017): BPI Challenge 2017. 4TU.ResearchData. Dataset. "
+    f"{definitions.DATASET_DOI_URL}"
+)
+
+
+def attribution_text(csv_file_name: str) -> str:
+    """Plain-text acknowledgement packed next to a downloaded CSV (4TU General Terms of Use, Art. 1 and 4)."""
+    width = max(len(label) for label, _ in definitions.DATASET_ATTRIBUTION) + 1
+    fields = "\n".join(f"  {label + ':':<{width}} {value}" for label, value in definitions.DATASET_ATTRIBUTION)
+    return (
+        "DATASET ATTRIBUTION\n"
+        "===================\n\n"
+        f"{csv_file_name} is derived from the BPI Challenge 2017 dataset.\n\n"
+        "Citation:\n"
+        f"  {_DATASET_CITATION}\n\n"
+        f"{fields}\n"
+        f"  {'DOI:':<{width}} {definitions.DATASET_DOI}\n"
+        f"  {'':<{width}} {definitions.DATASET_DOI_URL}\n\n"
+        "Terms of use:\n"
+        f"  Use of this data is subject to the {definitions.DATASET_TERMS_NAME}:\n"
+        f"  {definitions.DATASET_TERMS_URL}\n"
+        "  Non-commercial use only.\n\n"
+        "Acknowledgement requirement:\n"
+        "  Keep this acknowledgement (this file, or the citation above) with the data whenever you\n"
+        "  share or redistribute it, and require anyone you share it with to keep it as well.\n\n"
+        "This file summarises the dataset's terms of use; it is not legal advice. Read the full\n"
+        "terms at the address above.\n"
     )
+
+
+def zip_file_name(csv_file_name: str) -> str:
+    stem = csv_file_name[:-4] if csv_file_name.lower().endswith(".csv") else csv_file_name
+    return f"{stem}_with_attribution.zip"
+
+
+def zip_key(csv_key: str) -> str:
+    """Widget key of the ZIP button (``dl_x`` -> ``zip_x``, so it never contains the CSV key)."""
+    return "zip_" + csv_key.removeprefix("dl_")
+
+
+def zip_payload(df: pd.DataFrame, csv_file_name: str):
+    """Deferred ZIP builder: the CSV (byte-identical to the plain download) plus ATTRIBUTION.txt.
+
+    Built in memory with the standard library only, with fixed timestamps and file modes.
+    """
+    frozen = display_frame(df)
+
+    def build() -> bytes:
+        members = ((csv_file_name, to_csv_bytes(frozen)),
+                   (ATTRIBUTION_FILE_NAME, attribution_text(csv_file_name).encode("utf-8")))
+        buffer = io.BytesIO()
+        with zipfile.ZipFile(buffer, "w") as archive:
+            for name, payload in members:
+                info = zipfile.ZipInfo(name, date_time=_ZIP_TIMESTAMP)
+                info.compress_type = zipfile.ZIP_DEFLATED
+                info.create_system = 3  # Unix, regardless of the server's platform
+                info.external_attr = _ZIP_FILE_MODE << 16
+                archive.writestr(info, payload)
+        return buffer.getvalue()
+
+    return build
+
+
+def download_csv(df: pd.DataFrame, file_name: str, *, label: str = "Download CSV", key: str) -> None:
+    with st.container(horizontal=True):
+        st.download_button(
+            label, data=csv_payload(df), file_name=file_name, mime="text/csv", key=key,
+            icon=":material/download:", on_click="ignore", disabled=df.empty,
+        )
+        st.download_button(
+            ZIP_LABEL, data=zip_payload(df, file_name), file_name=zip_file_name(file_name),
+            mime="application/zip", key=zip_key(key), icon=":material/folder_zip:", on_click="ignore",
+            disabled=df.empty, help=f"The same CSV plus {ATTRIBUTION_FILE_NAME} with the dataset acknowledgement.",
+        )
+    st.caption(definitions.DOWNLOAD_NOTICE)  # dataset acknowledgement travels with every download control
 
 
 def display_frame(df: pd.DataFrame) -> pd.DataFrame:
@@ -186,6 +264,17 @@ def error_panel(error: DashboardError) -> None:
                 st.code(str(error.source), language=None)
             if error.details:
                 st.code(str(error.details), language=None)
+
+
+def dataset_attribution() -> None:
+    """Sidebar box acknowledging the dataset source (shown on every page, even if data fails to load)."""
+    fields = [f"**{label}:** {value}" for label, value in definitions.DATASET_ATTRIBUTION]
+    fields += [
+        f"**DOI:** [{definitions.DATASET_DOI}]({definitions.DATASET_DOI_URL})",
+        f"**Terms:** [{definitions.DATASET_TERMS_NAME}]({definitions.DATASET_TERMS_URL})",
+    ]
+    with st.sidebar.container(border=True, key="dataset_attribution"):
+        st.markdown("**Data source**  \n" + "  \n".join(fields))
 
 
 def placeholder(title: str, items: Sequence[str]) -> None:
