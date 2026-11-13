@@ -1,0 +1,13 @@
+final_activity,applications,percentage
+W_Validate application,12662,40.19
+W_Call after offers,9457,30.01
+W_Call incomplete files,4676,14.84
+O_Cancelled,4436,14.08
+W_Complete application,144,0.46
+W_Assess potential fraud,102,0.32
+O_Sent (mail and online),15,0.05
+O_Sent (online only),8,0.03
+W_Shortened completion ,5,0.02
+W_Personal Loan collection,2,0.01
+A_Denied,1,0.0
+O_Returned,1,0.0

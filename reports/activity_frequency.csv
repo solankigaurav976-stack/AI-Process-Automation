@@ -1,0 +1,27 @@
+concept:name,total_events,applications
+W_Validate application,209496,21870
+W_Call after offers,191092,31362
+W_Call incomplete files,168529,15003
+W_Complete application,148900,31509
+W_Handle leads,47264,20423
+O_Created,42995,31509
+O_Create Offer,42995,31509
+O_Sent (mail and online),39707,31050
+A_Validating,38816,21870
+A_Accepted,31509,31509
+A_Concept,31509,31509
+A_Create Application,31509,31509
+A_Complete,31362,31362
+O_Returned,23305,21768
+A_Incomplete,23055,15003
+O_Cancelled,20898,15682
+A_Submitted,20423,20423
+A_Pending,17228,17228
+O_Accepted,17228,17228
+A_Cancelled,10431,10431
+O_Refused,4695,3720
+A_Denied,3753,3752
+W_Assess potential fraud,3282,303
+O_Sent (online only),2026,1800
+W_Shortened completion ,238,74
+W_Personal Loan collection,22,2

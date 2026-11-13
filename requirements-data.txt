@@ -1,0 +1,7 @@
+# Data-preparation dependencies: building data/processed/loan_application_events.parquet
+# from the raw XES log with src/ingest_data.py.
+# Includes the dashboard's pinned runtime packages, so one install covers both.
+# Do not use the pm4py[stable] extra: it pins pandas 3.1.0, which conflicts with
+# the dashboard's pandas 3.1.1.
+-r dashboard/requirements.txt
+pm4py==2.7.23.12

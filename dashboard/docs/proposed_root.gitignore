@@ -1,0 +1,31 @@
+# Proposed .gitignore for the project root (AI-Process-Automation/).
+# Not active here: copy it to the project root as ".gitignore" once approved.
+
+# --- Data: kept local (public dataset, too large for Git) ---
+data/raw/
+data/processed/
+# The raw XES is ~552 MB (above GitHub's 100 MB file limit). The processed Parquet
+# (~24 MB) is derived from it with src/ingest_data.py; download the dataset from
+# https://doi.org/10.4121/uuid:5f3067df-f10b-45da-b98b-86ae4c7a310b instead.
+
+# --- Python environment and caches ---
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# --- Streamlit secrets (none exist today; never commit them) ---
+.streamlit/secrets.toml
+**/.streamlit/secrets.toml
+.env
+.env.*
+
+# --- OS / editor files ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

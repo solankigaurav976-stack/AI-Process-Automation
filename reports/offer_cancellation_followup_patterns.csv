@@ -1,0 +1,577 @@
+case_id,gap_days,events_between,pattern,new_offer,offer_sent,workflow_activity,returned_offer
+Application_1002664914,30.668992337962965,8,"Offer sent, no new offer creation recorded",False,True,True,False
+Application_1003146166,30.58988439814815,1,Workflow activity only,False,False,True,False
+Application_1004817800,30.950659791666666,5,Workflow activity only,False,False,True,False
+Application_1005568510,36.196762094907406,62,Replacement offer created,True,True,True,True
+Application_1008848932,6.1989575694444445,8,"Offer sent, no new offer creation recorded",False,True,True,False
+Application_101548356,37.24216883101852,61,Replacement offer created,True,True,True,True
+Application_1015522224,0.012975208333333333,2,Replacement offer created,True,False,False,False
+Application_1016735,6.988107835648148,30,Workflow activity only,False,False,True,True
+Application_1019277788,30.62050150462963,6,Replacement offer created,True,True,True,False
+Application_102424049,30.59353855324074,5,Workflow activity only,False,False,True,False
+Application_1025650501,32.70215153935185,15,Replacement offer created,True,True,True,False
+Application_1025951958,30.706670787037037,6,Replacement offer created,True,True,True,False
+Application_1032601860,30.509601041666663,8,"Offer sent, no new offer creation recorded",False,True,True,False
+Application_1032645340,30.68299684027778,10,Replacement offer created,True,True,True,False
+Application_1033444821,44.90704625,5,Replacement offer created,True,True,True,False
+Application_1035150389,0.00016518518518518518,0,No recorded intermediate activity,False,False,False,False
+Application_103975512,0.7362000694444445,6,"Offer sent, no new offer creation recorded",False,True,True,False
+Application_104058265,0.0019045833333333334,0,No recorded intermediate activity,False,False,False,False
+Application_1043223939,30.89607730324074,2,Workflow activity only,False,False,True,False
+Application_1043759662,30.899865648148147,33,Replacement offer created,True,True,True,False
+Application_1047082157,30.66305013888889,9,Replacement offer created,True,True,True,False
+Application_1048806756,60.35641739583334,8,Replacement offer created,True,True,True,False
+Application_1049246293,38.5836571412037,7,Replacement offer created,True,True,True,False
+Application_1069151423,30.618751261574076,12,Replacement offer created,True,True,True,False
+Application_1070992899,0.00013511574074074074,0,No recorded intermediate activity,False,False,False,False
+Application_1072438560,30.607944861111115,12,Replacement offer created,True,True,True,False
+Application_1077233112,30.768219479166667,5,Replacement offer created,True,True,True,False
+Application_1079252932,9.894191956018519,31,Workflow activity only,False,False,True,True
+Application_1079354715,30.800916365740743,6,Replacement offer created,True,True,True,False
+Application_1082106712,31.806774537037036,8,"Offer sent, no new offer creation recorded",False,True,True,False
+Application_1089160582,30.744315937499998,5,Workflow activity only,False,False,True,False
+Application_1098949698,30.794173217592594,10,Replacement offer created,True,True,True,False
+Application_1100173647,24.868506655092595,34,Replacement offer created,True,True,True,True
+Application_1102933096,30.901226712962963,8,"Offer sent, no new offer creation recorded",False,True,True,False
+Application_1104335525,4.7949102083333335,0,No recorded intermediate activity,False,False,False,False
+Application_1106033018,30.838836273148146,6,Replacement offer created,True,True,True,False
+Application_1106209536,0.0001593287037037037,0,No recorded intermediate activity,False,False,False,False
+Application_1118164446,30.61053769675926,3,Workflow activity only,False,False,True,False
+Application_111956933,55.935856585648146,17,Replacement offer created,True,True,True,False
+Application_112118887,6.922123090277778,18,Replacement offer created,True,True,True,False
+Application_1124052442,0.00011019675925925926,0,No recorded intermediate activity,False,False,False,False
+Application_11293173,22.985945266203704,30,Replacement offer created,True,True,True,False
+Application_1136484968,0.000438136574074074,0,No recorded intermediate activity,False,False,False,False
+Application_1136568641,30.583786435185186,2,Workflow activity only,False,False,True,False
+Application_1140614876,30.94091652777778,4,"Offer sent, no new offer creation recorded",False,True,True,False
+Application_1149600070,0.0007940393518518519,1,Other activity only,False,False,False,False
+Application_1152947139,30.864963425925925,9,Replacement offer created,True,True,True,False
+Application_1157095713,30.988012430555557,2,Workflow activity only,False,False,True,False
+Application_1160543702,30.831992025462963,0,No recorded intermediate activity,False,False,False,False
+Application_1164875967,4.153186400462963,3,Workflow activity only,False,False,True,False
+Application_1166032926,0.0003499421296296296,0,No recorded intermediate activity,False,False,False,False
+Application_1166636265,0.0031165856481481483,1,Workflow activity only,False,False,True,False
+Application_1169258361,30.704419085648148,10,Replacement offer created,True,True,True,False
+Application_1174228992,13.706736203703702,10,Replacement offer created,True,True,True,False
+Application_1177970255,14.386862974537037,26,Replacement offer created,True,True,True,True
+Application_1179346967,44.74792891203704,8,Replacement offer created,True,True,True,False
+Application_1180599027,0.00011215277777777778,0,No recorded intermediate activity,False,False,False,False
+Application_1184458941,30.91274105324074,8,Replacement offer created,True,True,True,False
+Application_119108505,30.752596793981482,3,Workflow activity only,False,False,True,False
+Application_1195543683,0.0047509027777777775,0,No recorded intermediate activity,False,False,False,False
+Application_1195912965,2.5619883912037036,0,No recorded intermediate activity,False,False,False,False
+Application_119698863,30.726906701388888,13,Replacement offer created,True,True,True,False
+Application_1197309763,35.66757818287037,5,Replacement offer created,True,True,True,False
+Application_1197737267,30.901955046296298,3,Workflow activity only,False,False,True,False
+Application_1201139814,0.00012465277777777778,0,No recorded intermediate activity,False,False,False,False
+Application_1204778754,30.64181195601852,10,Replacement offer created,True,True,True,False
+Application_1206489743,31.602964016203703,12,Replacement offer created,True,True,True,False
+Application_1221766967,0.0008860879629629631,0,No recorded intermediate activity,False,False,False,False
+Application_1222481512,30.87399626157407,8,"Offer sent, no new offer creation recorded",False,True,True,False
+Application_1227954317,21.00594701388889,3,Workflow activity only,False,False,True,False
+Application_1230226715,0.001208310185185185,0,No recorded intermediate activity,False,False,False,False
+Application_1230944650,0.00024031250000000002,0,No recorded intermediate activity,False,False,False,False
+Application_1232378526,30.461655486111113,2,Workflow activity only,False,False,True,False
+Application_1235123682,30.883713622685182,8,"Offer sent, no new offer creation recorded",False,True,True,False
+Application_1246734967,0.0014469212962962962,0,No recorded intermediate activity,False,False,False,False
+Application_1248061466,30.848332175925925,1,"Offer sent, no new offer creation recorded",False,True,False,False
+Application_1252666486,30.67504185185185,2,Workflow activity only,False,False,True,False
+Application_1253523196,30.833601898148146,9,"Offer sent, no new offer creation recorded",False,True,True,False
+Application_1273389411,30.898842662037037,3,Other activity only,False,False,False,False
+Application_1274885238,30.637410173611112,6,Replacement offer created,True,True,True,False
+Application_1280449733,0.003611388888888889,3,Replacement offer created,True,False,True,False
+Application_1283783929,30.490782962962964,10,"Offer sent, no new offer creation recorded",False,True,True,False
+Application_1284871199,0.00015788194444444443,0,No recorded intermediate activity,False,False,False,False
+Application_1287309755,30.942892094907407,1,"Offer sent, no new offer creation recorded",False,True,False,False
+Application_1290395170,0.00016177083333333335,0,No recorded intermediate activity,False,False,False,False
+Application_1291779828,41.86420543981482,37,Replacement offer created,True,True,True,True
+Application_1293120092,0.0001453125,0,No recorded intermediate activity,False,False,False,False
+Application_129387718,30.932873576388886,8,"Offer sent, no new offer creation recorded",False,True,True,False
+Application_1296048962,30.4859809375,4,Replacement offer created,True,True,True,False
+Application_1296103550,30.714220381944443,4,Workflow activity only,False,False,True,False
+Application_1296338355,30.480256377314817,8,"Offer sent, no new offer creation recorded",False,True,True,False
+Application_129816772,30.926584398148147,4,"Offer sent, no new offer creation recorded",False,True,True,False
+Application_1320757635,0.00021775462962962962,0,No recorded intermediate activity,False,False,False,False
+Application_1327704129,32.12079789351852,18,Replacement offer created,True,True,True,False
+Application_1340690340,30.655065752314812,8,"Offer sent, no new offer creation recorded",False,True,True,False
+Application_1341454810,8.619673090277777,8,Replacement offer created,True,True,True,False
+Application_1346377514,44.83877151620371,6,Replacement offer created,True,True,True,False
+Application_1346420300,30.546624872685186,7,Replacement offer created,True,True,True,False
+Application_1360332664,30.557096076388888,6,Replacement offer created,True,True,True,False
+Application_1364798306,30.646327962962964,3,Workflow activity only,False,False,True,False
+Application_1364855059,30.48359222222222,3,Workflow activity only,False,False,True,False
+Application_1377067074,30.79421258101852,14,Replacement offer created,True,True,True,False
+Application_1383370916,8.077546296296297e-05,0,No recorded intermediate activity,False,False,False,False
+Application_1383522757,30.67537738425926,1,"Offer sent, no new offer creation recorded",False,True,False,False
+Application_1389644287,25.710416759259257,13,Workflow activity only,False,False,True,False
+Application_1395812526,5.833050636574074,8,"Offer sent, no new offer creation recorded",False,True,True,False
+Application_1399527891,44.47164725694444,11,Replacement offer created,True,True,True,False
+Application_1404826562,41.98906443287037,19,Replacement offer created,True,True,True,False
+Application_1406129719,0.002037361111111111,8,Replacement offer created,True,True,True,False
+Application_1410086930,30.746389351851853,3,Workflow activity only,False,False,True,False
+Application_1411339990,30.456538368055558,6,Replacement offer created,True,True,True,False
+Application_1415473064,30.911945833333334,8,"Offer sent, no new offer creation recorded",False,True,True,False
+Application_1415699882,30.905539212962964,10,Replacement offer created,True,True,True,False
+Application_1416057621,30.656917002314817,5,Workflow activity only,False,False,True,False
+Application_1417307867,0.0013296064814814815,1,Other activity only,False,False,False,False
+Application_1418375332,0.015424780092592592,3,Replacement offer created,True,True,False,False
+Application_1423784718,30.854275694444443,8,"Offer sent, no new offer creation recorded",False,True,True,False
+Application_1426260594,0.00010903935185185185,0,No recorded intermediate activity,False,False,False,False
+Application_1432123575,30.71021244212963,3,Workflow activity only,False,False,True,False
+Application_1434497828,36.89844224537037,29,"Offer sent, no new offer creation recorded",False,True,True,True
+Application_1435504879,0.0006763310185185185,0,No recorded intermediate activity,False,False,False,False
+Application_1436892213,0.0011505092592592593,0,No recorded intermediate activity,False,False,False,False
+Application_1438933809,30.56640967592593,8,"Offer sent, no new offer creation recorded",False,True,True,False
+Application_1443021261,35.000924259259264,26,Replacement offer created,True,True,True,True
+Application_1445606790,30.50870482638889,3,Workflow activity only,False,False,True,False
+Application_1446797920,30.481706712962964,1,Other activity only,False,False,False,False
+Application_1454619110,3.833241585648148,3,Workflow activity only,False,False,True,False
+Application_1456037360,30.529393773148147,3,Workflow activity only,False,False,True,False
+Application_1459013488,3.8036719444444445,6,Replacement offer created,True,True,True,False
+Application_1460401130,30.56158670138889,3,Workflow activity only,False,False,True,False
+Application_1464059152,30.79670989583333,14,Replacement offer created,True,True,True,False
+Application_1466353702,0.0002760648148148148,1,Other activity only,False,False,False,False
+Application_1469553374,30.734186585648146,3,Replacement offer created,True,True,False,False
+Application_147056337,0.00013699074074074075,0,No recorded intermediate activity,False,False,False,False
+Application_147157588,0.000691863425925926,0,No recorded intermediate activity,False,False,False,False
+Application_147352520,30.815743229166664,6,Replacement offer created,True,True,True,False
+Application_1476810710,0.00018631944444444444,0,No recorded intermediate activity,False,False,False,False
+Application_1480315001,30.847581435185184,8,"Offer sent, no new offer creation recorded",False,True,True,False
+Application_1484851617,30.809241284722223,2,Workflow activity only,False,False,True,False
+Application_1485695068,39.826843414351856,16,Replacement offer created,True,True,True,False
+Application_1487325229,0.0001555787037037037,1,Other activity only,False,False,False,False
+Application_1487539906,0.0005859606481481482,2,Replacement offer created,True,False,False,False
+Application_1488370615,30.85415217592593,6,Replacement offer created,True,True,True,False
+Application_1491561902,37.70567927083333,11,Replacement offer created,True,True,True,False
+Application_1496645833,45.878094085648144,21,Replacement offer created,True,True,True,False
+Application_1499562447,30.564750821759258,5,"Offer sent, no new offer creation recorded",False,True,True,False
+Application_150460419,0.00014766203703703702,0,No recorded intermediate activity,False,False,False,False
+Application_1518013035,30.728856956018518,14,Replacement offer created,True,True,True,False
+Application_1522967492,36.71107060185185,11,Replacement offer created,True,True,True,False
+Application_1526702402,0.00019128472222222225,0,No recorded intermediate activity,False,False,False,False
+Application_1527873568,21.825376759259257,2,Workflow activity only,False,False,True,False
+Application_15283814,14.046506423611111,6,Replacement offer created,True,True,True,False
+Application_1528488858,30.46423766203704,8,"Offer sent, no new offer creation recorded",False,True,True,False
+Application_1535364446,30.640703935185183,8,"Offer sent, no new offer creation recorded",False,True,True,False
+Application_1537300058,20.902318275462964,29,Workflow activity only,False,False,True,True
+Application_1547107498,30.60982787037037,5,Replacement offer created,True,True,True,False
+Application_1548427030,0.0006088541666666666,0,No recorded intermediate activity,False,False,False,False
+Application_1550675590,22.274673969907408,25,Replacement offer created,True,True,True,True
+Application_155102742,25.100418078703704,29,Replacement offer created,True,True,True,True
+Application_1553960104,13.444710937499998,3,Workflow activity only,False,False,True,False
+Application_1558699583,0.00029885416666666667,0,No recorded intermediate activity,False,False,False,False
+Application_1564247002,3.9784813657407403,10,Replacement offer created,True,True,True,False
+Application_1565253423,0.020756770833333334,0,No recorded intermediate activity,False,False,False,False
+Application_1569156673,6.144541041666667,15,Replacement offer created,True,True,True,False
+Application_1573414954,30.70525568287037,10,Replacement offer created,True,True,True,False
+Application_1577667494,42.585286921296294,66,Replacement offer created,True,True,True,True
+Application_1582910332,30.497532662037038,10,Replacement offer created,True,True,True,False
+Application_1585099278,30.871469687500003,10,Replacement offer created,True,True,True,False
+Application_1588502303,18.92206440972222,29,Replacement offer created,True,True,True,True
+Application_1592858998,0.0004364930555555556,1,Other activity only,False,False,False,False
+Application_1593340963,26.15012704861111,11,Replacement offer created,True,True,True,False
+Application_1593504728,30.58915111111111,10,Replacement offer created,True,True,True,False
+Application_1594604497,0.0011437384259259259,1,Other activity only,False,False,False,False
+Application_1595554552,0.00020706018518518518,0,No recorded intermediate activity,False,False,False,False
+Application_1597525905,21.489680810185185,0,No recorded intermediate activity,False,False,False,False
+Application_1607880476,13.804660416666666,35,Replacement offer created,True,True,True,True
+Application_1610326543,0.00024865740740740745,1,Other activity only,False,False,False,False
+Application_1611838399,30.083939606481483,9,Replacement offer created,True,True,True,False
+Application_1616117711,53.935331053240745,51,Workflow activity only,False,False,True,True
+Application_1617180019,14.07326258101852,7,Replacement offer created,True,True,True,False
+Application_1618107300,7.720884571759259,14,Replacement offer created,True,True,True,False
+Application_1619173621,0.0002562268518518519,0,No recorded intermediate activity,False,False,False,False
+Application_1619492169,30.646041469907406,3,Workflow activity only,False,False,True,False
+Application_1619793657,10.693077604166668,0,No recorded intermediate activity,False,False,False,False
+Application_1624873179,30.945248530092595,10,Replacement offer created,True,True,True,False
+Application_162523916,30.527165324074073,10,Replacement offer created,True,True,True,False
+Application_1627660481,30.493055439814817,7,Replacement offer created,True,True,True,False
+Application_1634751250,29.022871261574075,6,Replacement offer created,True,True,True,False
+Application_164098190,30.82156130787037,13,Replacement offer created,True,True,True,False
+Application_1641565943,0.00019443287037037036,0,No recorded intermediate activity,False,False,False,False
+Application_1645236489,26.885628125,18,Replacement offer created,True,True,True,False
+Application_1648425665,10.151782002314814,8,"Offer sent, no new offer creation recorded",False,True,True,False
+Application_1648539957,44.75780121527778,9,Replacement offer created,True,True,True,False
+Application_1652572414,9.153784895833333,44,"Offer sent, no new offer creation recorded",False,True,True,True
+Application_1653747700,30.846351481481484,3,"Offer sent, no new offer creation recorded",False,True,True,False
+Application_1656791018,74.14669221064815,66,Replacement offer created,True,True,True,True
+Application_1662465317,30.775837256944445,7,Replacement offer created,True,True,False,False
+Application_1664730949,50.358587870370364,33,Workflow activity only,False,False,True,True
+Application_1664756314,0.0002373726851851852,0,No recorded intermediate activity,False,False,False,False
+Application_1667206692,0.0002460185185185185,0,No recorded intermediate activity,False,False,False,False
+Application_1668055532,30.574879189814816,8,"Offer sent, no new offer creation recorded",False,True,True,False
+Application_1672838569,30.55323054398148,10,Replacement offer created,True,True,True,False
+Application_1677505161,5.848164409722223,22,Replacement offer created,True,True,True,True
+Application_168002011,0.000123125,0,No recorded intermediate activity,False,False,False,False
+Application_1684338204,7.107291203703704,19,Replacement offer created,True,True,True,True
+Application_168568235,30.862754872685187,10,Replacement offer created,True,True,True,False
+Application_1697507456,35.90721819444444,15,Replacement offer created,True,True,True,False
+Application_1697645995,0.027798819444444445,2,Workflow activity only,False,False,True,False
+Application_1698914074,9.875824895833333,22,"Offer sent, no new offer creation recorded",False,True,True,True
+Application_1699185807,30.835971875000002,5,Workflow activity only,False,False,True,False
+Application_1700174135,42.90603511574074,33,Replacement offer created,True,True,True,True
+Application_1703692771,30.826826956018518,5,Workflow activity only,False,False,True,False
+Application_1705547444,0.0003051388888888889,0,No recorded intermediate activity,False,False,False,False
+Application_1709057207,51.928612152777774,65,"Offer sent, no new offer creation recorded",False,True,True,True
+Application_1709214037,7.112195416666666,14,Workflow activity only,False,False,True,True
+Application_1711544690,1.8201130787037036,12,Replacement offer created,True,True,True,False
+Application_1718708689,0.00043300925925925923,0,No recorded intermediate activity,False,False,False,False
+Application_1721513096,43.18080520833333,62,Replacement offer created,True,True,True,True
+Application_1732221433,30.905059953703706,3,"Offer sent, no new offer creation recorded",False,True,True,False
+Application_173342167,30.814086828703704,4,"Offer sent, no new offer creation recorded",False,True,True,False
+Application_1735566698,30.842839722222223,3,Workflow activity only,False,False,True,False
+Application_1736444832,30.707796400462964,10,Replacement offer created,True,True,True,False
+Application_1740531110,7.014112905092593,9,Replacement offer created,True,True,True,False
+Application_1741539429,0.00013543981481481482,0,No recorded intermediate activity,False,False,False,False
+Application_1747572025,0.00016842592592592593,0,No recorded intermediate activity,False,False,False,False
+Application_1755447171,0.00015025462962962963,1,Other activity only,False,False,False,False
+Application_1761323771,0.002547326388888889,1,Other activity only,False,False,False,False
+Application_1761674405,10.526427928240741,0,No recorded intermediate activity,False,False,False,False
+Application_1763494631,18.804282743055555,46,Replacement offer created,True,True,True,True
+Application_1764050268,28.792269351851854,23,"Offer sent, no new offer creation recorded",False,True,True,True
+Application_1766560747,2.8109306249999997,1,Workflow activity only,False,False,True,False
+Application_176915858,31.513996921296293,17,"Offer sent, no new offer creation recorded",False,True,True,False
+Application_1769949181,0.00013717592592592593,0,No recorded intermediate activity,False,False,False,False
+Application_1772361320,0.00015320601851851853,1,Other activity only,False,False,False,False
+Application_1773093189,30.649894548611112,8,"Offer sent, no new offer creation recorded",False,True,True,False
+Application_1774753524,45.26558474537037,8,Replacement offer created,True,True,False,False
+Application_1775086376,30.816008668981485,8,"Offer sent, no new offer creation recorded",False,True,True,False
+Application_1775679205,20.946454131944446,14,"Offer sent, no new offer creation recorded",False,True,True,True
+Application_177756951,47.895994351851854,43,Replacement offer created,True,True,True,True
+Application_1784378860,30.636904699074076,3,Workflow activity only,False,False,True,False
+Application_1784815865,30.711139375,3,Workflow activity only,False,False,True,False
+Application_1786953423,30.7293915625,8,"Offer sent, no new offer creation recorded",False,True,True,False
+Application_1787313382,34.59891840277778,12,Replacement offer created,True,True,True,False
+Application_1787645438,0.0017173842592592592,0,No recorded intermediate activity,False,False,False,False
+Application_1788941050,44.77555989583333,46,Replacement offer created,True,True,True,True
+Application_1790659498,30.541604733796298,8,"Offer sent, no new offer creation recorded",False,True,True,False
+Application_1794658977,0.00010840277777777778,0,No recorded intermediate activity,False,False,False,False
+Application_1803232046,30.90122778935185,4,Workflow activity only,False,False,True,False
+Application_1807274524,31.655797025462963,10,"Offer sent, no new offer creation recorded",False,True,True,False
+Application_180846372,16.751935729166668,6,Replacement offer created,True,True,True,False
+Application_1810274575,43.75562943287037,38,Replacement offer created,True,True,True,True
+Application_1815373434,0.0009371412037037036,0,No recorded intermediate activity,False,False,False,False
+Application_1819420512,30.75115079861111,10,Replacement offer created,True,True,True,False
+Application_1820860663,0.00011789351851851852,2,Other activity only,False,False,False,False
+Application_1822788449,0.00016172453703703705,0,No recorded intermediate activity,False,False,False,False
+Application_1830730638,30.80736533564815,10,Replacement offer created,True,True,True,False
+Application_1848685618,0.00039278935185185185,0,No recorded intermediate activity,False,False,False,False
+Application_1850714835,9.927083333333333e-05,0,No recorded intermediate activity,False,False,False,False
+Application_1852582726,0.00028868055555555553,1,Other activity only,False,False,False,False
+Application_1852628062,25.70223116898148,19,Workflow activity only,False,False,True,False
+Application_1854801140,54.56782547453704,9,Replacement offer created,True,True,True,False
+Application_1857366417,30.61384295138889,8,"Offer sent, no new offer creation recorded",False,True,True,False
+Application_1858029829,7.414514930555555,1,Workflow activity only,False,False,True,False
+Application_1859851567,0.0003857175925925926,0,No recorded intermediate activity,False,False,False,False
+Application_1861068199,30.903986180555556,6,Replacement offer created,True,True,True,False
+Application_1862264307,26.68849759259259,2,Replacement offer created,True,False,False,False
+Application_1863738487,30.67634770833333,3,"Offer sent, no new offer creation recorded",False,True,False,False
+Application_1865878674,30.484999560185184,3,Workflow activity only,False,False,True,False
+Application_1866869887,30.773741990740742,23,Replacement offer created,True,True,True,False
+Application_1870444730,0.009681412037037037,2,"Offer sent, no new offer creation recorded",False,True,False,False
+Application_1871313966,0.003148020833333333,0,No recorded intermediate activity,False,False,False,False
+Application_1882772763,30.698097824074072,10,Replacement offer created,True,True,True,False
+Application_1885130117,0.00011380787037037037,0,No recorded intermediate activity,False,False,False,False
+Application_1886544140,30.599345162037036,3,Workflow activity only,False,False,True,False
+Application_1886662655,30.795505381944444,10,Replacement offer created,True,True,True,False
+Application_1888004158,30.617325300925927,10,Replacement offer created,True,True,True,False
+Application_188850562,52.32452538194444,7,Replacement offer created,True,True,True,False
+Application_1890584729,21.10781412037037,14,Replacement offer created,True,True,True,False
+Application_1894934924,25.795219525462965,21,"Offer sent, no new offer creation recorded",False,True,True,True
+Application_1896170333,8.229166666666667e-05,0,No recorded intermediate activity,False,False,False,False
+Application_1898457792,30.773779166666667,6,Replacement offer created,True,True,True,False
+Application_1908615777,30.786413217592592,21,Replacement offer created,True,True,True,False
+Application_1920818884,0.0001748148148148148,0,No recorded intermediate activity,False,False,False,False
+Application_1922772011,15.85061300925926,16,Workflow activity only,False,False,True,True
+Application_1922968828,24.87651621527778,0,No recorded intermediate activity,False,False,False,False
+Application_1922999248,30.654438611111107,9,"Offer sent, no new offer creation recorded",False,True,True,False
+Application_1926826475,63.658845775462964,23,Replacement offer created,True,True,True,False
+Application_192954463,0.00015971064814814814,0,No recorded intermediate activity,False,False,False,False
+Application_1933896868,30.620716550925927,11,"Offer sent, no new offer creation recorded",False,True,True,False
+Application_1934221378,0.1432029861111111,13,Replacement offer created,True,True,True,False
+Application_1936928312,39.759797453703705,23,Replacement offer created,True,True,True,True
+Application_1940814877,0.00011356481481481481,0,No recorded intermediate activity,False,False,False,False
+Application_1944618138,0.003659756944444444,0,No recorded intermediate activity,False,False,False,False
+Application_1953215776,37.71468418981482,17,Replacement offer created,True,True,True,False
+Application_1955068735,23.913242465277776,5,Workflow activity only,False,False,True,False
+Application_1958616340,0.00030347222222222223,0,No recorded intermediate activity,False,False,False,False
+Application_1959309423,0.00029292824074074074,0,No recorded intermediate activity,False,False,False,False
+Application_196483749,57.90253662037037,12,Replacement offer created,True,True,True,False
+Application_1966193141,26.73725021990741,0,No recorded intermediate activity,False,False,False,False
+Application_1975819852,0.00068375,0,No recorded intermediate activity,False,False,False,False
+Application_1979478985,30.84069738425926,9,"Offer sent, no new offer creation recorded",False,True,True,False
+Application_1983689717,30.458239849537037,11,"Offer sent, no new offer creation recorded",False,True,True,False
+Application_1985375927,0.00022254629629629632,0,No recorded intermediate activity,False,False,False,False
+Application_1985757094,0.0003237615740740741,0,No recorded intermediate activity,False,False,False,False
+Application_1986755838,0.0002592013888888889,0,No recorded intermediate activity,False,False,False,False
+Application_199016477,40.00679861111111,50,Replacement offer created,True,True,True,True
+Application_199519930,30.62975755787037,8,"Offer sent, no new offer creation recorded",False,True,True,False
+Application_1995625398,6.88428431712963,18,Workflow activity only,False,False,True,False
+Application_1998036485,0.00035375,0,No recorded intermediate activity,False,False,False,False
+Application_2004054477,0.00020064814814814812,0,No recorded intermediate activity,False,False,False,False
+Application_2004610363,0.0001961111111111111,0,No recorded intermediate activity,False,False,False,False
+Application_2004687858,0.00012444444444444444,0,No recorded intermediate activity,False,False,False,False
+Application_201596136,0.00012509259259259258,0,No recorded intermediate activity,False,False,False,False
+Application_2016299275,0.00019385416666666666,0,No recorded intermediate activity,False,False,False,False
+Application_2017246170,0.0006122569444444445,0,No recorded intermediate activity,False,False,False,False
+Application_202034308,0.001633414351851852,1,Other activity only,False,False,False,False
+Application_2022864702,6.856846296296297,23,"Offer sent, no new offer creation recorded",False,True,True,True
+Application_2028590322,30.86772945601852,9,"Offer sent, no new offer creation recorded",False,True,True,False
+Application_203309822,1.7274451504629629,9,Replacement offer created,True,True,True,False
+Application_2034069001,30.838519583333337,6,Replacement offer created,True,True,True,False
+Application_2034229687,0.00047381944444444446,2,Other activity only,False,False,False,False
+Application_2036987744,8.55787037037037e-05,0,No recorded intermediate activity,False,False,False,False
+Application_203747837,24.751143715277774,1,Other activity only,False,False,False,False
+Application_2037608840,49.64332097222222,56,Replacement offer created,True,True,True,False
+Application_2038392140,30.89753314814815,10,Replacement offer created,True,True,True,False
+Application_2040526338,30.866427534722224,11,Replacement offer created,True,True,True,False
+Application_2043324814,3.916723680555555,3,Workflow activity only,False,False,True,False
+Application_2046609381,30.54774925925926,8,"Offer sent, no new offer creation recorded",False,True,True,False
+Application_2046912216,0.12096873842592593,0,No recorded intermediate activity,False,False,False,False
+Application_2046997339,30.92065380787037,8,"Offer sent, no new offer creation recorded",False,True,True,False
+Application_2047347964,9.632659432870371,14,"Offer sent, no new offer creation recorded",False,True,True,True
+Application_20502706,4.015888726851852,3,Workflow activity only,False,False,True,False
+Application_2050796770,30.912023321759257,7,Replacement offer created,True,True,False,False
+Application_2051234496,29.67247864583333,2,Workflow activity only,False,False,True,False
+Application_2055289424,30.748975162037038,6,Replacement offer created,True,True,True,False
+Application_205578680,30.79503090277778,18,Replacement offer created,True,True,True,False
+Application_2058160245,30.93955520833333,3,Replacement offer created,True,True,False,False
+Application_2063997760,0.0010693518518518517,0,No recorded intermediate activity,False,False,False,False
+Application_2064462934,30.775060879629628,5,Replacement offer created,True,True,True,False
+Application_2065559138,8.755787037037037e-05,0,No recorded intermediate activity,False,False,False,False
+Application_2070255847,0.00014877314814814815,1,Other activity only,False,False,False,False
+Application_2077390677,30.719077372685188,8,"Offer sent, no new offer creation recorded",False,True,True,False
+Application_2090544740,58.96581662037037,7,Replacement offer created,True,True,True,False
+Application_2090930512,30.522251469907406,14,Replacement offer created,True,True,True,False
+Application_2096766083,0.05385158564814815,5,Workflow activity only,False,False,True,False
+Application_2098447669,3.940481736111111,3,Workflow activity only,False,False,True,False
+Application_2100081105,30.762885914351852,3,Replacement offer created,True,True,False,False
+Application_2107655919,30.568926828703702,6,Replacement offer created,True,True,True,False
+Application_2112516828,30.849607905092594,10,Replacement offer created,True,True,True,False
+Application_2112572794,0.07962862268518518,7,"Offer sent, no new offer creation recorded",False,True,True,False
+Application_2113358372,0.0006113194444444444,0,No recorded intermediate activity,False,False,False,False
+Application_2114960877,30.70284482638889,3,Workflow activity only,False,False,True,False
+Application_2122440631,0.0031852662037037036,0,No recorded intermediate activity,False,False,False,False
+Application_2123753772,30.654091458333333,0,No recorded intermediate activity,False,False,False,False
+Application_2124154186,30.81778445601852,4,"Offer sent, no new offer creation recorded",False,True,True,False
+Application_2133828413,12.559853842592592,0,No recorded intermediate activity,False,False,False,False
+Application_2144796153,30.929612268518518,0,No recorded intermediate activity,False,False,False,False
+Application_2145481541,21.80412722222222,29,Workflow activity only,False,False,True,True
+Application_215579251,0.0005628125,0,No recorded intermediate activity,False,False,False,False
+Application_216273399,30.816177627314815,4,Replacement offer created,True,True,False,False
+Application_223366470,0.0003112384259259259,0,No recorded intermediate activity,False,False,False,False
+Application_226134221,30.526076354166666,10,Replacement offer created,True,True,True,False
+Application_227375656,30.69148315972222,10,Replacement offer created,True,True,True,False
+Application_229924151,0.0013295949074074074,1,Other activity only,False,False,False,False
+Application_233348227,23.92337747685185,52,Replacement offer created,True,True,True,True
+Application_237701040,36.588844074074075,11,Replacement offer created,True,True,True,False
+Application_244740578,14.746068263888889,47,Replacement offer created,True,True,True,True
+Application_248714087,41.81976069444445,11,Replacement offer created,True,True,True,False
+Application_257004713,30.715981886574074,16,Replacement offer created,True,True,True,False
+Application_262031538,0.00027038194444444446,0,No recorded intermediate activity,False,False,False,False
+Application_265711162,0.00021015046296296295,0,No recorded intermediate activity,False,False,False,False
+Application_267475970,45.09794891203703,21,"Offer sent, no new offer creation recorded",False,True,True,True
+Application_268261813,4.237974305555555,5,Replacement offer created,True,True,True,False
+Application_269341222,30.776405636574076,4,"Offer sent, no new offer creation recorded",False,True,True,False
+Application_272984769,0.0012589467592592591,0,No recorded intermediate activity,False,False,False,False
+Application_273628242,10.989534363425925,22,"Offer sent, no new offer creation recorded",False,True,True,True
+Application_275531167,50.675078692129624,8,Replacement offer created,True,True,True,False
+Application_277122874,30.64071976851852,3,Workflow activity only,False,False,True,False
+Application_278046816,30.754810717592594,6,Replacement offer created,True,True,True,False
+Application_279568918,30.81744841435185,0,No recorded intermediate activity,False,False,False,False
+Application_281413501,13.16041337962963,5,Workflow activity only,False,False,True,False
+Application_285349575,0.0004156365740740741,0,No recorded intermediate activity,False,False,False,False
+Application_287352488,30.62469929398148,3,Workflow activity only,False,False,True,False
+Application_296709253,30.892570370370372,8,"Offer sent, no new offer creation recorded",False,True,True,False
+Application_298469665,30.928044247685186,6,Replacement offer created,True,True,True,False
+Application_303703837,30.612622847222223,14,Replacement offer created,True,True,True,False
+Application_304101828,0.0001268287037037037,0,No recorded intermediate activity,False,False,False,False
+Application_310663154,30.617564016203705,3,Workflow activity only,False,False,True,False
+Application_311393237,30.636280590277778,4,"Offer sent, no new offer creation recorded",False,True,True,False
+Application_313335774,30.664147442129632,6,Replacement offer created,True,True,True,False
+Application_31519304,30.616482824074073,9,Replacement offer created,True,True,True,False
+Application_318274594,31.80997228009259,10,Replacement offer created,True,True,True,False
+Application_318678125,0.0001225925925925926,0,No recorded intermediate activity,False,False,False,False
+Application_325378981,12.030237395833334,23,Replacement offer created,True,True,True,True
+Application_328141860,30.508373055555555,10,Replacement offer created,True,True,True,False
+Application_330251746,30.51114459490741,3,Workflow activity only,False,False,True,False
+Application_33189114,30.457678564814813,13,Replacement offer created,True,True,True,False
+Application_335778555,30.874972476851852,2,Workflow activity only,False,False,True,False
+Application_341808944,30.716322222222225,3,Workflow activity only,False,False,True,False
+Application_346678657,16.796225972222224,22,Replacement offer created,True,True,True,False
+Application_350976918,20.09948771990741,10,Replacement offer created,True,True,True,False
+Application_356197099,30.872880925925926,2,Workflow activity only,False,False,True,False
+Application_36392371,0.00015065972222222222,1,Other activity only,False,False,False,False
+Application_365410914,30.88997869212963,16,Replacement offer created,True,True,True,False
+Application_366844104,0.00013518518518518518,3,Other activity only,False,False,False,False
+Application_36831628,8.01102119212963,8,"Offer sent, no new offer creation recorded",False,True,True,False
+Application_370191543,30.488496354166667,3,"Offer sent, no new offer creation recorded",False,True,True,False
+Application_373627092,30.747960729166667,1,Workflow activity only,False,False,True,False
+Application_374608151,30.799425833333334,13,Replacement offer created,True,True,True,False
+Application_377788852,37.839370358796295,5,Replacement offer created,True,True,True,False
+Application_378946955,30.685304155092595,6,Replacement offer created,True,True,True,False
+Application_379434087,30.475724652777775,8,"Offer sent, no new offer creation recorded",False,True,True,False
+Application_380711094,30.474047557870367,8,"Offer sent, no new offer creation recorded",False,True,True,False
+Application_381339861,0.0027108449074074075,0,No recorded intermediate activity,False,False,False,False
+Application_383557920,1.9711286921296296,0,No recorded intermediate activity,False,False,False,False
+Application_385432676,0.00013141203703703703,0,No recorded intermediate activity,False,False,False,False
+Application_39745715,0.0011883101851851853,0,No recorded intermediate activity,False,False,False,False
+Application_398794455,30.84242462962963,6,Replacement offer created,True,True,True,False
+Application_400367935,0.0002972916666666667,0,No recorded intermediate activity,False,False,False,False
+Application_409538111,30.726954907407407,5,Replacement offer created,True,False,True,False
+Application_415122614,30.81336769675926,20,Replacement offer created,True,True,True,False
+Application_420100939,45.85122697916667,14,Replacement offer created,True,True,True,False
+Application_423354116,30.63017599537037,22,Replacement offer created,True,True,True,False
+Application_435005976,0.00011292824074074074,0,No recorded intermediate activity,False,False,False,False
+Application_436683148,30.632132488425924,12,"Offer sent, no new offer creation recorded",False,True,True,False
+Application_438441132,30.866012314814817,4,"Offer sent, no new offer creation recorded",False,True,True,False
+Application_441890252,0.00013947916666666666,2,Other activity only,False,False,False,False
+Application_44606820,30.474972696759256,5,Workflow activity only,False,False,True,False
+Application_449283910,0.00031965277777777775,1,Other activity only,False,False,False,False
+Application_450199756,30.594949907407404,3,Workflow activity only,False,False,True,False
+Application_462219635,33.71763136574074,14,Replacement offer created,True,True,True,False
+Application_465287588,15.927421469907408,29,Replacement offer created,True,True,True,True
+Application_466430983,30.54107903935185,10,Replacement offer created,True,True,True,False
+Application_470988921,30.90086678240741,3,Replacement offer created,True,True,False,False
+Application_477836862,30.650058229166667,3,Workflow activity only,False,False,True,False
+Application_47791846,31.73725547453704,5,Replacement offer created,True,True,True,False
+Application_479161029,30.683687141203706,4,Workflow activity only,False,False,True,False
+Application_481350942,36.88931106481481,86,"Offer sent, no new offer creation recorded",False,True,True,True
+Application_482428569,7.137004201388888,5,Replacement offer created,True,False,True,False
+Application_487284664,30.282114062499996,10,Replacement offer created,True,True,True,False
+Application_492666721,13.896990462962963,41,Replacement offer created,True,True,True,True
+Application_49799302,30.693480810185186,14,Replacement offer created,True,True,True,False
+Application_507577219,30.77234596064815,8,"Offer sent, no new offer creation recorded",False,True,True,False
+Application_512304073,30.65568511574074,3,Workflow activity only,False,False,True,False
+Application_513446861,30.729657060185186,4,Workflow activity only,False,False,True,False
+Application_517621297,17.731886747685184,2,Workflow activity only,False,False,True,False
+Application_520819518,0.0005060300925925925,0,No recorded intermediate activity,False,False,False,False
+Application_521061754,4.851277743055555,8,"Offer sent, no new offer creation recorded",False,True,True,False
+Application_528436480,31.926703449074072,3,Workflow activity only,False,False,True,False
+Application_533079487,30.7371366087963,12,Replacement offer created,True,True,True,False
+Application_53888887,0.0029894212962962964,0,No recorded intermediate activity,False,False,False,False
+Application_542599834,30.906544756944445,1,"Offer sent, no new offer creation recorded",False,True,False,False
+Application_545952433,9.582175925925925e-05,0,No recorded intermediate activity,False,False,False,False
+Application_557873610,30.867415798611113,3,Workflow activity only,False,False,True,False
+Application_560750680,0.9497640625,8,Replacement offer created,True,True,True,False
+Application_562703048,30.838364409722224,11,Replacement offer created,True,True,True,False
+Application_567227067,30.468894849537037,12,Replacement offer created,True,True,True,False
+Application_572814439,0.0006021759259259259,0,No recorded intermediate activity,False,False,False,False
+Application_574300643,30.82069570601852,10,Replacement offer created,True,True,True,False
+Application_57947552,27.358524039351853,1,Other activity only,False,False,False,False
+Application_580032762,30.629907696759258,10,Replacement offer created,True,True,True,False
+Application_581494514,14.837411203703704,3,Workflow activity only,False,False,True,False
+Application_583595029,0.0018374537037037038,2,Replacement offer created,True,False,False,False
+Application_587334519,0.0005551851851851853,0,No recorded intermediate activity,False,False,False,False
+Application_590059645,30.606508680555557,15,Replacement offer created,True,True,True,False
+Application_592083089,30.572061180555558,5,"Offer sent, no new offer creation recorded",False,True,True,False
+Application_597372127,30.941218495370368,18,Replacement offer created,True,True,True,False
+Application_598384246,30.499099849537036,2,Workflow activity only,False,False,True,False
+Application_599481939,0.0005476736111111112,1,Other activity only,False,False,False,False
+Application_603377512,30.89713693287037,8,"Offer sent, no new offer creation recorded",False,True,True,False
+Application_604352948,30.62356119212963,14,Replacement offer created,True,True,True,False
+Application_609106039,30.65451042824074,3,"Offer sent, no new offer creation recorded",False,True,True,False
+Application_610717758,30.448163020833334,4,Workflow activity only,False,False,True,False
+Application_610732794,4.861015150462963,14,Replacement offer created,True,True,True,False
+Application_61113461,6.840123807870371,5,Workflow activity only,False,False,True,False
+Application_613278916,30.78532283564815,3,Workflow activity only,False,False,True,False
+Application_615891328,30.728157060185186,3,Workflow activity only,False,False,True,False
+Application_617529015,21.826866782407407,0,No recorded intermediate activity,False,False,False,False
+Application_617601984,30.64650111111111,3,Workflow activity only,False,False,True,False
+Application_620584761,0.00020130787037037038,1,Other activity only,False,False,False,False
+Application_626843998,30.792283935185186,10,Replacement offer created,True,True,True,False
+Application_634367533,0.0003825462962962963,0,No recorded intermediate activity,False,False,False,False
+Application_635400595,30.632702557870374,10,Replacement offer created,True,True,True,False
+Application_639466397,0.0009996875000000001,0,No recorded intermediate activity,False,False,False,False
+Application_654780783,30.651350567129626,16,Replacement offer created,True,True,True,False
+Application_65892719,30.91887945601852,6,Replacement offer created,True,True,True,False
+Application_659438407,30.604178668981483,3,Workflow activity only,False,False,True,False
+Application_663509716,4.268503460648148,23,Replacement offer created,True,True,True,False
+Application_664218071,36.85810883101852,42,"Offer sent, no new offer creation recorded",False,True,True,True
+Application_664337168,32.768883715277774,5,Replacement offer created,True,True,True,False
+Application_665122636,4.144387013888889,6,Replacement offer created,True,True,True,False
+Application_667158687,30.705446655092594,10,Replacement offer created,True,True,True,False
+Application_671576430,30.64074099537037,6,Replacement offer created,True,True,True,False
+Application_672931249,30.864251747685184,12,Replacement offer created,True,True,True,False
+Application_677911120,30.836221666666667,16,Replacement offer created,True,True,True,False
+Application_679646041,30.66281736111111,9,"Offer sent, no new offer creation recorded",False,True,True,False
+Application_683002021,30.707964386574076,10,Replacement offer created,True,True,True,False
+Application_685941371,6.626489965277778,3,Workflow activity only,False,False,True,False
+Application_686112140,36.13487730324074,23,Replacement offer created,True,True,True,True
+Application_697272539,30.73519891203704,5,Other activity only,False,False,False,False
+Application_70034619,0.002325960648148148,0,No recorded intermediate activity,False,False,False,False
+Application_700751021,30.65340792824074,0,No recorded intermediate activity,False,False,False,False
+Application_704902711,4.976052685185185,3,Workflow activity only,False,False,True,False
+Application_727235919,35.83979644675926,34,Replacement offer created,True,True,True,True
+Application_727868756,30.63253869212963,10,Replacement offer created,True,True,True,False
+Application_737251826,0.0001567361111111111,1,Other activity only,False,False,False,False
+Application_739068789,1.7044814699074073,0,No recorded intermediate activity,False,False,False,False
+Application_758200875,8.790138391203705,23,Replacement offer created,True,True,True,True
+Application_759582319,30.52794806712963,10,Replacement offer created,True,True,True,False
+Application_761865335,0.00013846064814814813,1,Other activity only,False,False,False,False
+Application_772991462,3.939048923611111,10,Replacement offer created,True,True,True,False
+Application_773585477,0.0002572337962962963,0,No recorded intermediate activity,False,False,False,False
+Application_774412072,30.740324803240743,7,Workflow activity only,False,False,True,False
+Application_778393530,30.770693194444444,3,Workflow activity only,False,False,True,False
+Application_780118274,0.00029752314814814816,0,No recorded intermediate activity,False,False,False,False
+Application_794627224,27.86387189814815,2,Workflow activity only,False,False,True,False
+Application_799026640,0.00017436342592592593,0,No recorded intermediate activity,False,False,False,False
+Application_802195798,40.79559173611111,5,Replacement offer created,True,True,True,False
+Application_804372620,30.5746725462963,10,Replacement offer created,True,True,True,False
+Application_805828914,30.887088611111107,10,Replacement offer created,True,True,True,False
+Application_808374175,30.543390717592594,11,Replacement offer created,True,True,True,False
+Application_811515143,50.71705278935185,7,Workflow activity only,False,False,True,False
+Application_81891881,5.695483333333334,9,"Offer sent, no new offer creation recorded",False,True,True,False
+Application_825188863,30.476795671296298,4,Workflow activity only,False,False,True,False
+Application_827969862,0.044920613425925925,4,Workflow activity only,False,False,True,False
+Application_828403356,5.228459525462963,10,Replacement offer created,True,True,True,False
+Application_828932178,9.098664444444445,1,Workflow activity only,False,False,True,False
+Application_830713008,33.884662928240736,21,Replacement offer created,True,True,True,True
+Application_834783575,13.078555706018518,29,Replacement offer created,True,True,True,True
+Application_842424685,20.90822361111111,24,Replacement offer created,True,True,True,True
+Application_848190586,10.916693958333333,1,Other activity only,False,False,False,False
+Application_851895556,30.851121423611108,5,Workflow activity only,False,False,True,False
+Application_856904799,60.80437383101852,61,Replacement offer created,True,True,True,True
+Application_858789639,30.64532981481481,3,Workflow activity only,False,False,True,False
+Application_869832720,30.888314641203703,8,"Offer sent, no new offer creation recorded",False,True,True,False
+Application_874740404,3.752654259259259,10,Replacement offer created,True,True,True,False
+Application_877553483,13.99046357638889,33,Replacement offer created,True,True,True,True
+Application_879782268,30.59526266203704,6,Replacement offer created,True,True,True,False
+Application_880200347,0.004067372685185185,0,No recorded intermediate activity,False,False,False,False
+Application_891053076,0.0008958333333333334,0,No recorded intermediate activity,False,False,False,False
+Application_892787372,30.524353252314814,3,Workflow activity only,False,False,True,False
+Application_900869983,0.02565068287037037,0,No recorded intermediate activity,False,False,False,False
+Application_901986473,30.775472129629627,2,Other activity only,False,False,False,False
+Application_916135710,28.718574583333332,1,Workflow activity only,False,False,True,False
+Application_917308364,32.695572685185184,13,Replacement offer created,True,True,True,False
+Application_918963277,30.659152465277778,6,Replacement offer created,True,True,True,False
+Application_920048730,30.730475636574077,7,Replacement offer created,True,True,True,False
+Application_92011841,23.741793784722223,0,No recorded intermediate activity,False,False,False,False
+Application_92185315,30.875462627314814,3,Workflow activity only,False,False,True,False
+Application_928770378,30.93297826388889,14,Replacement offer created,True,True,True,False
+Application_929743536,0.00012524305555555555,0,No recorded intermediate activity,False,False,False,False
+Application_932969568,30.68689511574074,6,Replacement offer created,True,True,True,False
+Application_936279128,30.763684456018517,3,Workflow activity only,False,False,True,False
+Application_940043354,34.97188318287037,50,Replacement offer created,True,True,True,True
+Application_944177310,30.87314428240741,10,Replacement offer created,True,True,True,False
+Application_944382948,29.784682719907405,0,No recorded intermediate activity,False,False,False,False
+Application_945218374,30.71604049768519,4,"Offer sent, no new offer creation recorded",False,True,True,False
+Application_945361250,0.0007803125,0,No recorded intermediate activity,False,False,False,False
+Application_945899913,10.011938252314815,41,Replacement offer created,True,True,True,True
+Application_947401801,30.91550978009259,10,Replacement offer created,True,True,True,False
+Application_950415786,0.0054167129629629635,0,No recorded intermediate activity,False,False,False,False
+Application_953483461,12.224054386574075,9,Replacement offer created,True,True,True,False
+Application_954036515,0.002680821759259259,0,No recorded intermediate activity,False,False,False,False
+Application_961088614,11.295798981481482,22,Workflow activity only,False,False,True,True
+Application_962788627,0.00025510416666666666,0,No recorded intermediate activity,False,False,False,False
+Application_964166355,30.483393379629632,2,Workflow activity only,False,False,True,False
+Application_964418796,55.48946700231482,14,Replacement offer created,True,True,True,False
+Application_965285563,0.00014862268518518517,0,No recorded intermediate activity,False,False,False,False
+Application_971975107,30.636142037037036,10,Replacement offer created,True,True,True,False
+Application_973750778,30.91263782407407,2,Other activity only,False,False,False,False
+Application_973860151,9.257035300925926,3,"Offer sent, no new offer creation recorded",False,True,True,False
+Application_978946302,0.0006592824074074075,2,Other activity only,False,False,False,False
+Application_979440358,30.709762094907404,10,Replacement offer created,True,True,True,False
+Application_983709263,30.483400405092592,3,Workflow activity only,False,False,True,False
+Application_988106501,30.63707435185185,0,No recorded intermediate activity,False,False,False,False
+Application_997592088,30.59530928240741,8,"Offer sent, no new offer creation recorded",False,True,True,False

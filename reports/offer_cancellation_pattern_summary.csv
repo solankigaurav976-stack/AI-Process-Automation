@@ -1,0 +1,6 @@
+pattern,applications,median_gap_days,average_gap_days,median_events,average_events,applications_with_new_offers,applications_with_offers_sent,applications_with_workflow_activity,applications_with_returned_offers,share_percent
+No recorded intermediate activity,126,0.0,3.0,0.0,0.0,0,0,0,0,21.88
+"Offer sent, no new offer creation recorded",85,30.66,26.92,8.0,10.89,0,85,79,13,14.76
+Other activity only,33,0.0,6.57,1.0,1.42,0,0,0,0,5.73
+Replacement offer created,230,30.73,28.93,10.0,14.87,230,223,217,37,39.93
+Workflow activity only,102,30.59,24.92,3.0,5.74,0,0,102,9,17.71
