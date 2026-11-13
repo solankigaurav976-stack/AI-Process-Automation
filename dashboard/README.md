@@ -384,8 +384,8 @@ Integration and UI tests need the processed Parquet file and the reports.
 
 **Author:** Gaurav Solanki
 
-<!-- TODO (owner): add the profile links you want to show (LinkedIn / GitHub / portfolio). -->
-*Profile links to be added.*
+- **GitHub:** [solankigaurav976-stack](https://github.com/solankigaurav976-stack)
+- **Portfolio:** [View my portfolio](https://solankigaurav976-stack.github.io/gaurav-portfolio/)
 
 * **Code:** the project's original source code and documentation are released under the
   [MIT License](../LICENSE).

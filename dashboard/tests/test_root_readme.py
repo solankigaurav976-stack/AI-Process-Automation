@@ -162,11 +162,17 @@ def test_root_readme_author_and_owner_supplied_links():
     assert "to be added" not in section.lower() and "TODO" not in section
 
 
-def test_dashboard_readme_author_named_and_links_left_as_placeholders():
+def test_dashboard_readme_author_and_owner_supplied_links():
     text = DASH_README
-    assert AUTHOR in text
-    assert re.search(r"github\.com/|github\.io|" + FORBIDDEN_CONTACTS, text) is None
-    assert "to be added" in text.lower()
+    section = text.split("## 14. Author and licence", 1)[1].split("\n## ", 1)[0]
+    assert f"**Author:** {AUTHOR}" in section and f"| **Author** | {AUTHOR} |" in text
+    assert f"- **GitHub:** [solankigaurav976-stack]({GITHUB_PROFILE})" in section
+    assert f"- **Portfolio:** [View my portfolio]({PORTFOLIO})" in section
+    profile_urls = {url for url in re.findall(r"https?://[^\s)>\]]+", text)
+                    if re.search(r"github\.com|github\.io", url)}
+    assert profile_urls == {GITHUB_PROFILE, PORTFOLIO}, profile_urls ^ {GITHUB_PROFILE, PORTFOLIO}
+    assert re.search(FORBIDDEN_CONTACTS, text) is None
+    assert "to be added" not in text.lower() and "TODO" not in section
 
 
 # --------------------------------------------------------------------------- #
