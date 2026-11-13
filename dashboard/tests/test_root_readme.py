@@ -137,13 +137,35 @@ def test_root_readme_states_report_restrictions():
 
 
 # --------------------------------------------------------------------------- #
-# Author details: real name, no invented links
+# Author details: real name and the owner-supplied links only - nothing invented
 # --------------------------------------------------------------------------- #
-@pytest.mark.parametrize("name", ["README.md", "dashboard/README.md"])
-def test_author_named_and_links_left_as_placeholders(name):
-    text = MARKDOWN[name][1]
-    assert "Gaurav Solanki" in text
-    assert re.search(r"linkedin\.com|github\.com/|twitter\.com|x\.com/|@\w+\.\w+", text) is None
+AUTHOR = "Gaurav Solanki"
+GITHUB_PROFILE = "https://github.com/solankigaurav976-stack"
+PORTFOLIO = "https://solankigaurav976-stack.github.io/gaurav-portfolio/"
+REPOSITORY = f"{GITHUB_PROFILE}/AI-Process-Automation.git"
+#: Every personal / profile URL the owner has supplied. Any other github / github.io URL is not allowed.
+OWNER_SUPPLIED_URLS = {GITHUB_PROFILE, PORTFOLIO, REPOSITORY}
+FORBIDDEN_CONTACTS = r"linkedin\.com|twitter\.com|//x\.com|mailto:|[\w.+-]+@[\w-]+\.[\w.]+"
+
+
+def test_root_readme_author_and_owner_supplied_links():
+    text = ROOT_README
+    section = text.split("### Author", 1)[1].split("\n### ", 1)[0]
+    assert f"**{AUTHOR}**" in section and f"| **Author** | {AUTHOR} |" in text
+    assert f"- **GitHub:** [solankigaurav976-stack]({GITHUB_PROFILE})" in section
+    assert f"- **Portfolio:** [View my portfolio]({PORTFOLIO})" in section
+    assert f"git clone {REPOSITORY}" in text
+    profile_urls = {url for url in re.findall(r"https?://[^\s)>\]]+", text)
+                    if re.search(r"github\.com|github\.io", url)}
+    assert profile_urls == OWNER_SUPPLIED_URLS, profile_urls ^ OWNER_SUPPLIED_URLS
+    assert re.search(FORBIDDEN_CONTACTS, text) is None
+    assert "to be added" not in section.lower() and "TODO" not in section
+
+
+def test_dashboard_readme_author_named_and_links_left_as_placeholders():
+    text = DASH_README
+    assert AUTHOR in text
+    assert re.search(r"github\.com/|github\.io|" + FORBIDDEN_CONTACTS, text) is None
     assert "to be added" in text.lower()
 
 
